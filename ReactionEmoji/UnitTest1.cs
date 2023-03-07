@@ -172,15 +172,17 @@ namespace ReactionEmoji
             var message = new Message()
             { Content = "Hello there!", CreatedDate = DateTime.Now, Owner = sender };
 
+            //Create emoji
             var emoji = new Emoji()
             { Name = "happy", CharCode = "\uD83D\uDE01"};
             var emoji1 = new Emoji()
             { Name = "evil", CharCode = "\uD83D\uDE08" };
             var emoji2 = new Emoji()
             { Name = "crying", CharCode = "\uD83D\uDE02" };
-            //message.Emojis.Add(emoji);
-            //message.Emojis.Add(emoji1);
-            //message.Emojis.Add(emoji2);
+            
+            //Create Reactor
+            var reactor1 = new Reactor()
+            { }
 
             //var result = message.Emojis.OrderBy(e => e.CreatedTime).ToList();
             //Assert.AreEqual(result[0], emoji2);
